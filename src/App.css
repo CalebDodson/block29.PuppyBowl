@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #A7C7E7;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  text-align: center;
+  padding-top: 2px;
+  font-size: 36px;
+}
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+input[type="submit"] {
+  background-color: #FF7F50;
+  padding: 4px 8px 4px 8px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  margin-left: 10px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px black;
+}
+#searchFormContainer {
+  display: flex;
+  justify-content: center;
+}
+.imgContainer {
+  width: 320px;
+  height: 320px;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+}
+.puppyImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+h3 {
+  font-size: 30px;
+  margin: 4px 0 4px 0;
+}
+.breed, .status {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 4px;
+}
+.status {
+  margin-bottom: 8px;
+}
+.deleteBtn {
+  font-size: 20px;
+  background-color: #FF4C4C;
+  padding: 5px 8px 5px 8px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  margin-left: 5px;
+}
+.deleteBtn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px black;
+}
+.deleteBtn:active {
+  background-color: #FFD966;
+}
+.statusBtn {
+  font-size: 20px;
+  background-color: #FF7F50;
+  padding: 5px 8px 5px 8px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  margin-right: 5px;
+}
+.statusBtn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px black;
+}
+.statusBtn:active {
+  background-color: #A7C7E7;
+}
+.puppyDetails {
+  background-color: #3A7D44;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  width: 600px;
+  height: 600px;
+}
+.puppyDetails h2, .puppyDetails p {
+  margin: 10px;
+}
+#filteredResults {
+  background-color: #FFD966;
+  padding: 20px 50px 20px 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#filteredResults h3 {
+  text-align: center;
+}
+#filteredResults ul {
+  margin-right: 10px;
+}
