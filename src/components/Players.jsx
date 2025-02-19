@@ -13,6 +13,10 @@ export default function Players( {name, img, breed, status, fetchAllPuppies, pup
         borderRadius: '5px'
     }
 
+    const black = {
+        color: 'black'
+    }
+
     const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2410-FTB-ET-WEB-FT/players`;
 
     const deletePuppy = async (puppyId) => {
@@ -42,8 +46,8 @@ export default function Players( {name, img, breed, status, fetchAllPuppies, pup
                 <p className="breed"><b>Breed:</b> {breed}</p>
                 <p className="status"><b>Status:</b> {status}</p>
                 <div id="btnContainer">
-                    <button className="statusBtn">Change Status</button>
-                    <button className="deleteBtn" onClick={() => deletePuppy(puppyId)}>Delete</button>
+                    <button className="statusBtn" style={black}>Change Status</button>
+                    <button className="deleteBtn" style={black} onClick={() => deletePuppy(puppyId)}>Delete</button>
                 </div>
             </div>
         </>

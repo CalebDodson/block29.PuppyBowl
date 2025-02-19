@@ -12,8 +12,12 @@ export default function SearchResults({ puppies }) {
         setFilteredPuppies(filtered);
     }, [puppies, searchName]);
 
+    const style = {
+        color: 'black'
+    }
+
     return (
-        <div id="filteredResults">
+        <div id="filteredResults" style={style}>
             <h3>Search results for "{searchName}" :</h3>
             {filteredPuppies.length > 0 ? (
                 <ul>

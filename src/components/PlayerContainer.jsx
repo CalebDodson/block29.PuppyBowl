@@ -8,11 +8,15 @@ export default function PlayerContainer({ puppies, setPuppies, fetchAllPuppies }
         marginBottom: "50px"
     }
 
+    const black = {
+        color: 'black'
+    }
+
     const sortedPuppies = [...puppies].sort((a, b) => b.id - a.id);
 
     return (
         <div>
-            <h2>Your Puppy Bowl Players</h2>
+            <h2 style={black}>Your Puppy Bowl Players</h2>
             <div id="all-puppies-container">
             {puppies.length > 0 ? (
                 <div className="puppy-list" style={style}>

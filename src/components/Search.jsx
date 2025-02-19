@@ -22,8 +22,14 @@ export default function Search( {puppies} ) {
         border: 'none',
         borderRadius: '5px',
         boxShadow: '0 0 5px black',
-        fontSize: '20px'
+        fontSize: '20px',
+        color: 'black'
     };
+
+    const black = {
+        color: 'black'
+    }
+
     return  (
         <>
             <div id="searchContainer" style={style}>
@@ -32,7 +38,7 @@ export default function Search( {puppies} ) {
                     <form onSubmit={handleFormSubmit}>
                         <label htmlFor="search">Enter Puppy's Name: </label>
                         <input type="text" id="search" name="search" value={searchName} onChange={handleSearchChange} />
-                        <input type="submit" value="Search" />
+                        <input type="submit" value="Search" style={black} />
                     </form>
                 </div>
             </div>

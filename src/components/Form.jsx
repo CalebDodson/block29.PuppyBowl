@@ -7,8 +7,13 @@ export default function Form( {fetchAllPuppies} ) {
         border: 'none',
         borderRadius: '5px',
         boxShadow: '0 0 5px black',
-        fontSize: '20px'
+        fontSize: '20px',
+        color: "black"
     };
+
+    const black = {
+        color: 'black'
+    }
 
     const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2410-FTB-ET-WEB-FT/players`;
 
@@ -56,7 +61,7 @@ export default function Form( {fetchAllPuppies} ) {
                         <input type="text" id="breed" name="breed" value={puppyData.breed} onChange={handleChange} />
                         <label htmlFor="imageUrl"> Puppy's Picture: </label>
                         <input type="url" id="picture" name="imageUrl" value={puppyData.imageUrl} onChange={handleChange} />
-                        <input type="submit" id="submitBtn" />
+                        <input type="submit" id="submitBtn" style={black} />
                     </form>
                 </div>
             </div>

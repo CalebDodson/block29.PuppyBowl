@@ -10,22 +10,22 @@ import './App.css';
 function App() {
   const [puppies,setPuppies] = useState([]);
 
-    const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2410-FTB-ET-WEB-FT/players`;
+  const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2410-FTB-ET-WEB-FT/players`;
 
-    const fetchAllPuppies = async () => {
-        try {
-            const response = await fetch(APIURL);
-            const json = await response.json();
-            const data = json.data.players;
-            setPuppies(data);
+  const fetchAllPuppies = async () => {
+      try {
+          const response = await fetch(APIURL);
+          const json = await response.json();
+          const data = json.data.players;
+          setPuppies(data);
 
-        } catch (error) {
-            console.error(error);
-        }
-    }
+      } catch (error) {
+          console.error(error);
+      }
+  }
 
-    useEffect(() => {
-      fetchAllPuppies();
+  useEffect(() => {
+    fetchAllPuppies();
   }, []);
 
   return (

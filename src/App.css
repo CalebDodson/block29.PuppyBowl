@@ -10,6 +10,7 @@ body {
 }
 h1 {
   font-size: 72px;
+  color: black;
 }
 h2 {
   text-align: center;
@@ -19,6 +20,15 @@ h2 {
 #form-container {
   display: flex;
   justify-content: center;
+}
+input[type="text"], input[type="url"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+input[type="text"]:focus, input[type="url"]:focus {
+  outline: none;
 }
 input[type="submit"] {
   background-color: #FF7F50;
